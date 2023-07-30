@@ -1,0 +1,20 @@
+@charset "utf-8";
+.bg-dark {
+	  background-color: rgb(238, 221, 102) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+
+  font-family: "Source Sans Pro";
+  color: rgb(0, 102, 153);
+}
+.navbar-nav .nav-item {
+	border-width: 1px;
+	border-color: rgb(255, 255, 51);
+	border-style: solid;
+	background-image: -moz-linear-gradient( -90deg, rgb(238,221,0) 0%, rgb(255,255,51) 100%);
+	background-image: -webkit-linear-gradient( -90deg, rgb(238,221,0) 0%, rgb(255,255,51) 100%);
+	background-image: -ms-linear-gradient( -90deg, rgb(238,221,0) 0%, rgb(255,255,51) 100%);
+	margin-left: 4px;
+	margin-right: 4px;
+	text-align: center;
+}
