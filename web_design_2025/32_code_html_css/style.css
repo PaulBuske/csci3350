@@ -1,5 +1,66 @@
-body{
-    font-family: "Arial Rounded MT Bold", Arial;
-    font-size: 16px;
+body {
     background-color: #5b6057;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: auto;
+    min-height: 100vh;
+}
+
+a img {
+    border: none
+}
+
+a:link {
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffff99;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+header {
+    padding-top: 22px;
+    padding-bottom: 16px;
+    box-shadow: inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5), inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+#about_us {
+    margin: auto;
+}
+
+.img-fluid.main {
+    margin-bottom: 30px;
+}
+
+
+.row.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.row.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+footer {
+    box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
 }
