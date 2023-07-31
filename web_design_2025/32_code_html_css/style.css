@@ -6,10 +6,18 @@ body {
     align-content: space-between;
     height: auto;
     min-height: 100vh;
+    margin: auto;
+}
+
+.row{
+    margin: auto;
 }
 
 a img {
     border: none
+}
+main{
+    min-height: 89vh;
 }
 
 a:link {
