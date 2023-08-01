@@ -128,6 +128,11 @@ a:visited {
     text-decoration: none;
 }
 
+#warrantyLink{
+    color: #f1e8b8;
+    text-decoration: none;
+}
+
 a:hover {
     color: #ffff99;
     text-decoration: none;
