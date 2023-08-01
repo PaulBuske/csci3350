@@ -6,65 +6,70 @@ body {
     align-content: space-between;
     height: auto;
     min-height: 100vh;
-    margin: auto;
+    font-family: "Arial Rounded MT Bold", "Arial", serif;
 }
-.nav-item{
+
+header {
+    padding-top: 22px;
+    padding-bottom: 16px;
+    box-shadow: inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5), inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+.nav-item {
     border-width: 1px;
-    border-color: rgb(94, 80, 63);
+    border-color: #5e503f;
     border-style: solid;
     border-radius: 6px;
     margin-right: .5rem;
     margin-left: .5rem;
-    background-color: rgb(241, 232, 184);
+    background-color: #f1e8b8;
     width: 65px;
     height: 41px;
-    font-family: "Arial";
     font-size: 8px;
-    color: rgb(169, 146, 125);
+    color: #a9927d;
     text-decoration: underline;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
     padding-top: .5rem;
-    z-index: 10;
 }
 
-#logo{
+#logo {
     border-width: 1px;
-    border-color: rgb(94, 80, 63);
+    border-color: #5e503f;
     border-style: solid;
     border-radius: 6px;
     margin-right: .5rem;
     margin-left: .5rem;
-    background-color: rgb(241, 232, 184);
+    background-color: #f1e8b8;
     width: 255px;
     height: 41px;
-    font-family: "Arial";
     font-size: 16px;
-    color: rgb(169, 146, 125);
+    color: #a9927d;
     line-height: 1.2;
     text-align: center;
     padding-top: .75rem;
     z-index: 10;
     margin-top: .5rem;
 }
-#logo span{
-    color: rgb(94, 80, 63);
+
+#logo span {
+    color: #5e503f;
 }
 
-#warranty{
+#warranty {
     border-width: 1px;
-    border-color: rgb(241, 232, 184);
+    border-color: #f1e8b8;
     border-style: solid;
     border-radius: 6px;
     margin-right: .5rem;
     margin-left: .5rem;
-    background-color:   rgb(94, 80, 63);
+    background-color: #5e503f;
     width: 161px;
     height: 41px;
-    font-family: "Arial";
     font-size: 14px;
-    color: rgb(241, 232, 184);
+    color: #f1e8b8;
     text-decoration: underline;
     text-transform: uppercase;
     line-height: 1.2;
@@ -74,30 +79,57 @@ body {
     margin-top: .5rem;
 }
 
-.dropdown-menu{
-    z-index: 10000;
-    color: rgb(169, 146, 125);
-    background-color: rgb(241, 232, 184);
-}
-
-.row{
-    margin: auto;
+ul.dropdown-menu.show {
+    z-index: 100;
+    color: #a9927d;
+    background-color: #f1e8b8;
+    position: relative;
+    border-width: 1px;
+    border-color: #5e503f;
+    border-style: solid;
+    border-radius: 6px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    width: 65px;
+    height: auto;
+    font-size: 8px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: .5rem;
+    top: auto;
 }
 
 a img {
     border: none
 }
-main{
-    min-height: 89vh;
+
+#startBuildingImage{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    min-width: 352px;
+    min-height: 177px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main {
+    min-height: 81vh;
 }
 
 a:link {
-    color: rgb(169, 146, 125);
+    color: #a9927d;
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(169, 146, 125);
+    color: #a9927d;
+    text-decoration: none;
+}
+
+#warrantyLink{
+    color: #f1e8b8;
     text-decoration: none;
 }
 
@@ -110,19 +142,45 @@ a:active {
     text-decoration: none;
 }
 
-header {
-    padding-top: 22px;
-    padding-bottom: 16px;
-    box-shadow: inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5), inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5);
-    margin-bottom: 30px;
+.text_container {
+    border: 1px #22333b solid;
+    border-radius: 6px;
+    background-image: -moz-linear-gradient(90deg, rgb(34, 51, 59) 0%, rgb(242, 244, 243) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(34, 51, 59) 0%, rgb(242, 244, 243) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(34, 51, 59) 0%, rgb(242, 244, 243) 100%);
+    max-width: 352px;
+    min-height: 177px;
+    padding: 1.5rem .5rem;
+    font-size: 12px;
+    color: #f1e8b8;
+    text-align: center;
+    margin: 15px auto;
 }
 
-#about_us {
-    margin: auto;
+.carousel.slide{
+    max-width: 352px;
+    min-height: 177px;
+    margin: 15px auto;
 }
 
-.img-fluid.main {
-    margin-bottom: 30px;
+#about_us_container {
+    background-image: url("images/about_us_picture.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    max-width: 352px;
+    min-height: 177px;
+    color: #0a0908;
+    padding: 1.5rem .5rem;
+    font-weight: bolder;
+    margin: 15px auto;
+}
+
+.row{
+    justify-content: center;
 }
 
 
@@ -133,13 +191,11 @@ header {
     align-content: center;
 }
 
-.row.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-}
-
 footer {
     box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
+    color: #f1e8b8;
+    font-size: 8px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: 30px;
 }
