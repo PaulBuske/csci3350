@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Assignments/csci3350" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DreamWeaver/Dreamweaver2021lesson01/lesson01" vcs="Git" />
   </component>
 </project>
